@@ -1,0 +1,199 @@
+:root {
+  --primary-color: rgb(4, 4, 163);
+  --secondary-color: rgb(3, 107, 15);
+  --dark-color: rgb(0, 0, 0);
+  --accent-color: rgb(249, 48, 222);
+  --background-color: rgb(35, 35, 35);
+  --text-color: rgb(255, 255, 255);
+  --alt-text: rgb(249, 48, 222);
+}
+
+/* Apply box-sizing globally */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Metal Mania", serif;
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.header {
+  text-align: center;
+  background: radial-gradient(circle, rgb(249, 48, 222), rgb(4, 4, 163));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 90px;
+}
+
+.descriptor {
+  text-align: center;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+.castle {
+  text-align: center;
+  font-size: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 calc(33.333% - 30px);
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card {
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  margin: 15px;
+  font-family: "Press Start 2p", serif;
+  border-style: none outset none none;
+  border-width: 3px;
+  border-radius: 25px;
+  border-color: var(--accent-color);
+  background-color: var(--dark-color);
+  text-decoration: none;
+  color: var(--text-color);
+  box-shadow: 0 9px var(--accent-color);
+}
+
+.card:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.card:active {
+  transform: translateY(4px);
+  box-shadow: 0 5px rgba(249, 48, 222, 0.573);
+}
+
+.card header {
+  text-align: center;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -10px;
+}
+
+.card h3 {
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.card-code {
+  font-family: "Press Start 2p", serif;
+  color: var(--text-color);
+  line-height: 1.25;
+  padding-top: 10px;
+  background: rgb(11, 87, 6);
+  margin-left: 20px;
+  margin-right: 20px;
+  user-select: all;
+  background: linear-gradient(
+    rgba(11, 87, 6, 0.228) 0%,
+    rgba(11, 87, 6, 1) 70%
+  );
+  text-align: unset;
+}
+
+@media (max-width: 767px) {
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+
+    .card {
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+      min-width: 390px;
+  }
+  
+  .card-header {
+    font-weight: 100;
+  }
+
+  .card-code {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 30px);
+    margin: 15px;
+    min-width: 250px;
+  }
+
+  .card-code {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+
+    flex: 1 1 calc(33.333% - 30px);
+    margin: 15px;
+    min-width: 250px;
+  }
+
+  .card-code {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .header {
+    font-size: 70px;
+    margin-left: 30px;
+  }
+
+  .card {
+    min-width: 370px;
+  }
+
+  .card-code {
+    font-size: 7px;
+  }
+
+  .castle {
+    margin-left: 30px;
+  }
+
+  .descriptor {
+    margin-left: 30px;
+  }
+}
