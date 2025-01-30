@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <h1 class="header">
+            CSS Snippet Cheatsheet
+        </h1>
+
+        <p class="descriptor">
+            If having trouble remembering CSS syntax, refer to this sheet and click on any of the below snippets to copy the code.
+        </p>
+
+        <pre class="castle">                                        
+                .-"    `-.      ,                               
+              .'          '.   /j\                              
+             /              \,/:/#\                /\           
+            ;              ,//' '/#\              //#\          
+            |             /' :   '/#\            /  /#\         
+            :         ,  /' /'    '/#\__..--""""/    /#\__      
+             \       /'\'-._:__    '/#\        ;      /#, """---
+              `-.   / ;#\']" ; """--./#J       ':____...!       
+                 `-/   /#\  J  [;[;[;Y]         |      ;        
+    """"""---....             __.--"/    '/#\ ;   " "  |     !    |   #! |        
+    ""--.. _.--""     /      ,/#\'-..____.;_,   |    |   '  |        
+     "-.        :_....___,/#} "####" | '_.-",   | #['  |        
+        '-._      |[;[;[;[;|         |.;'  /;\  |      |        
+        ,   `-.   |        :     _   .;'    /;\ |   #" |        
+        !      `._:      _  ;   ##' .;'      /;\|  _,  |        
+       .#\"""---..._    ';, |      .;{___     /;\  ]#' |__....--
+    .--.      ;'/#\         \    ]! |       "| , """--./_J    /         
+    /  '%;    /  '/#\         \   !' :        |!# #! #! #|    :`.__      
+    i__..'%] _:_   ;##J         \      :"#...._!   '  "  "|__  |    `--.._
+    | .--""" !|""""  |"""----...J     | '##"" `-._       |  """---.._    
+    ____: |      #|      |         #|     |          "]      ;   ___...-"T,  
+    /   :  :      !|      |   _______!_    |           |__..--;"""     ,;MM;  
+    :____| :    .-.#|      |  /\      /#\   |          /'               ''MM;  
+    |""": |   /   \|   .----+  ;      /#\  :___..--"";                  ,'MM; 
+    _Y--:  |  ;     ;.-'      ;  \______/#: /         ;                  ''MM; 
+    /    |  | ;_______;     ____!  |"##"""MM!         ;                    ,'MM;
+    !_____|  |  |"#"#"|____.'""##"  |       :         ;                     ''MM  
+    | """"--!._|     |##""         !       !         :____.....-------"""""" |'
+    |          :     |______                        ___!_ "#""#""#"""#"""#"""|  
+    __|          ;     |MM"MM"""""---..._______...--""MM"MM]                   |   
+    "\-.      :      |#                                  :                   |  
+    /#'.    |      /##,                                !                   |  
+    .',/'\   |       #:#,                                ;       .==.       |  
+    /"\'#"\',.|       ##;#,                               !     ,'||||',     |  
+    /;/`:       ######,          ____             _ :     M||||||M     |  
+    ###          /;"\.__"-._   """                   |===..M!!!!!!M_____|  
+             `--..`--.._____             _!_                    
+                            `--...____,="_.'`-.____ 
+    </pre>
+
+    <section class="cards">
+        <div class="card">
+            <header>
+                Flexbox Row
+            </header>
+                <h3>
+                 Use these 3 properties to create a flexbox row layout.
+                </h3>
+                <pre class="card-code">
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+                </pre>
+        </div>
+        <div class="card">
+            <header>
+                Flexbox Column
+            </header>
+                <h3>
+                 Use this for a column layout.
+                </h3>
+                <pre class="card-code">
+.column {
+    display: flex;
+    flex-direction: column;
+    }
+                </pre>
+        </div>
+        <div class="card">
+            <header>
+                CSS Grid Layout
+            </header>
+                <h3>
+                 Use this for a 12 column grid.
+                </h3>
+                <pre class="card-code">
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(12, lfr);
+}
+                </pre>
+        </div>
+        <div class="card">
+            <header>
+                Linear Gradients
+            </header>
+                <h3>
+                 Create bottom to top background linear gradient.
+                </h3>
+                <pre class="card-code">
+.linear-gradient-background {
+    background-image: linear-
+gradient(
+    rgba(11, 87, 6, 0.228) 0%,
+    rgba(11, 87, 6, 1) 70%
+);
+}
+                </pre>
+        </div>
+        <div class="card">
+            <header>
+                Box Transition Glow
+            </header>
+                <h3>
+                 Transition and box shadows for glow on hover.
+                </h3>
+                <pre class="card-code">
+.code-card .card-header {
+    border-redius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+rgba(11, 87, 6, 0.228) 0%,
+rgba(11, 87, 6, 1) 70%
+}
+                </pre>
+        </div>
+        <div class="card">
+            <header>
+                Overlay Card with Title
+            </header>
+                <h3>
+                 Postion properties and negative margins raise the element higher than its start.
+                </h3>
+                <pre class="card-code">
+.card-header {
+    position: relative;
+    margin-top: -20px
+}
+                </pre>
+        </div>
+    </section>
+    </body>
+</html>
