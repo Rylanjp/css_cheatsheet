@@ -1,14 +1,12 @@
 :root {
-  --primary-color: rgb(4, 4, 163);
-  --secondary-color: rgb(3, 107, 15);
-  --dark-color: rgb(0, 0, 0);
-  --accent-color: rgb(249, 48, 222);
-  --background-color: rgb(35, 35, 35);
-  --text-color: rgb(255, 255, 255);
-  --alt-text: rgb(249, 48, 222);
+  --primary-color: rgb(4, 4, 163);      /*Blue*/
+  --secondary-color: rgb(3, 107, 15);    /*Green*/
+  --dark-color: rgb(0, 0, 0);           /*Black*/
+  --accent-color: rgb(249, 48, 222);    /*Pink*/
+  --background-color: rgb(35, 35, 35);   /*Grey*/
+  --text-color: rgb(255, 255, 255);       /*White*/
 }
 
-/* Apply box-sizing globally */
 *, *::before, *::after {
   box-sizing: border-box;
 }
